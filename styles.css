@@ -7,12 +7,12 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    background: linear-gradient(135deg, #000000, #333333);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: #333;
+    color: #f5d78e; /* Dorado suave */
     margin: 0;
 }
 
@@ -20,9 +20,9 @@ body {
 .app-container {
     width: 90%;
     max-width: 360px;
-    background: white;
+    background: #1c1c1c; /* Negro intenso */
     border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     padding: 20px;
     text-align: center;
 }
@@ -31,13 +31,13 @@ body {
 .app-title {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #444;
+    color: #f5d78e; /* Dorado */
 }
 
 .app-description {
     font-size: 16px;
     margin-bottom: 20px;
-    color: #666;
+    color: #d4af37; /* Dorado más intenso */
 }
 
 /* Inputs de formulario */
@@ -49,16 +49,17 @@ body {
     width: 100%;
     padding: 12px;
     font-size: 16px;
-    border: 1px solid #ddd;
+    border: 1px solid #444; /* Gris oscuro */
     border-radius: 10px;
     outline: none;
-    background: #f9f9f9;
+    background: #262626; /* Fondo oscuro */
+    color: #f5d78e; /* Dorado */
     transition: 0.3s;
 }
 
 .input-group input:focus {
-    border-color: #26a69a;
-    background: #ffffff;
+    border-color: #d4af37; /* Dorado más vivo */
+    background: #1c1c1c; /* Fondo más oscuro */
 }
 
 /* Botones generales */
@@ -74,48 +75,26 @@ body {
     text-align: center;
     transition: transform 0.2s ease, background-color 0.3s ease;
     cursor: pointer;
+    color: #000; /* Negro para contraste con dorado */
 }
 
 /* Colores de botones */
 .btn.primary {
-    background: #26a69a;
-    color: white;
+    background: #d4af37; /* Dorado */
 }
 
 .btn.secondary {
-    background: #00796b;
-    color: white;
+    background: #f5d78e; /* Dorado más suave */
 }
 
-.btn.youtube {
-    background: #FF0000;
-    color: white;
-}
-
-.btn.facebook {
-    background: #4267B2;
-    color: white;
-}
-
-.btn.instagram {
-    background: linear-gradient(45deg, #FF512F, #DD2476);
-    color: white;
-}
-
-.btn.twitter {
-    background: #1DA1F2;
-    color: white;
-}
-
-/* Hover para botones */
 .btn:hover {
     transform: scale(1.05);
-    opacity: 0.9;
+    opacity: 0.85;
 }
 
 /* Mensaje de error */
 .error-msg {
-    color: red;
+    color: #ff6666; /* Rojo suave */
     font-size: 14px;
 }
 
@@ -130,4 +109,3 @@ body {
         padding: 10px;
     }
 }
-
