@@ -69,27 +69,55 @@ body {
     padding: 12px;
     margin-bottom: 15px;
     font-size: 16px;
-    border: none;
+    border: 1px solid transparent;
     border-radius: 10px;
     text-decoration: none;
     text-align: center;
-    transition: transform 0.2s ease, background-color 0.3s ease;
+    transition: transform 0.2s ease, background-color 0.3s ease, border-color 0.3s ease;
     cursor: pointer;
     color: #000; /* Negro para contraste con dorado */
 }
 
 /* Colores de botones */
 .btn.primary {
-    background: #d4af37; /* Dorado */
+    background: #d4af37; /* Dorado intenso */
 }
 
 .btn.secondary {
-    background: #f5d78e; /* Dorado más suave */
+    background: #f5d78e; /* Dorado suave */
 }
 
+.btn.youtube {
+    background: #FF0000; /* Rojo para el botón de YouTube */
+    color: white;
+}
+
+.btn.facebook {
+    background: #4267B2; /* Azul de Facebook */
+    color: white;
+}
+
+.btn.instagram {
+    background: linear-gradient(45deg, #FF512F, #DD2476); /* Degradado tipo Instagram */
+    color: white;
+}
+
+.btn.twitter {
+    background: #1DA1F2; /* Azul de Twitter */
+    color: white;
+}
+
+/* Hover para botones */
 .btn:hover {
     transform: scale(1.05);
     opacity: 0.85;
+    border-color: #d4af37; /* Añadir un borde dorado al pasar el mouse */
+}
+
+/* Estilo de clic */
+.btn:active {
+    transform: scale(0.95);
+    opacity: 0.9;
 }
 
 /* Mensaje de error */
