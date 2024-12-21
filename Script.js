@@ -9,7 +9,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
     // Validación simple de usuario y contraseña
     if (username === 'admin' && password === '1234') {
         // Redirige a la página de bienvenida si las credenciales son correctas
-        window.location.href = 'welcome.html';
+        window.location.href = 'AppAV.html';
     } else {
         // Muestra un mensaje de error si las credenciales son incorrectas
         errorMsg.textContent = 'Usuario o contraseña incorrectos. Intenta nuevamente.';
